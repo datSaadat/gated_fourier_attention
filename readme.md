@@ -6,7 +6,7 @@ This repository contains a modified RoBERTa implementation where each Transforme
 
 ## 1. Code Structure
 
-### ✔ Modified `transformers` source  
+### Modified `transformers` source  
 The file `modeling_roberta.py` is patched to include:
 - Fourier mixer (2D FFT)
 - Gumbel–Softmax gate
@@ -14,7 +14,7 @@ The file `modeling_roberta.py` is patched to include:
 - DropPath support  
 Place this file inside your local `transformers/models/roberta/` directory.
 
-### ✔ Training script  
+### Training script  
 Use `run_mlm_gated.py` (a lightly modified version of HF's MLM trainer) to launch pretraining.
 
 ---
